@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="300.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleAddWebsite" text="Add Website" />
+                  <MenuItem mnemonicParsing="false" onMenuValidation="#handleOpen" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Save As..." />
+              <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Graphs">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#graphAlert" text="Show the structure" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Index" />
+              <MenuItem mnemonicParsing="false" onAction="#alert" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
